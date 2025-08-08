@@ -27,9 +27,11 @@ namespace SfDataGrid_Demo
             sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "CustomerName", HeaderText = "Name", AllowEditing = false });
             sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "Country", HeaderText = "Country" , AllowEditing = true });
             sfDataGrid1.Columns.Add(new GridTextColumn() { MappingName = "ShipCity", HeaderText = "Ship City" , AllowEditing = false });          
+            //Event subscription
             sfDataGrid1.QueryCellStyle += OnQueryCellStyle;
         }
 
+        //Event customization
         private void OnQueryCellStyle(object sender, QueryCellStyleEventArgs e)
         {
             // To apply cell back color for editable columns
