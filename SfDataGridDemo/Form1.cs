@@ -43,16 +43,6 @@ namespace SfDataGrid_Demo
                 else
                     e.Style.BackColor = Color.LightGray;
             }
-
-            // To apply header back color for editable column
-
-            //if (e.Column != null)
-            //{
-            //    if (e.Column.AllowEditing is true)
-            //        e.Column.HeaderStyle.BackColor = Color.LightBlue;
-            //    else
-            //        e.Column.HeaderStyle.BackColor = Color.Gray;
-            //}
         }
     }
 }
