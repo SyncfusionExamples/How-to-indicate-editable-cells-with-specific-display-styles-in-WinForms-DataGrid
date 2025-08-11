@@ -16,6 +16,7 @@ namespace SfDataGrid_Demo
     public partial class Form1 : Form
     {
         OrderInfoCollection orderInfo;
+
         public Form1()
         {
             InitializeComponent();

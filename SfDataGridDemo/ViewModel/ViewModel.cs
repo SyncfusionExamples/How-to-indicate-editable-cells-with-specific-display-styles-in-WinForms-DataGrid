@@ -11,16 +11,19 @@ namespace SfDataGrid_Demo
     public class OrderInfoCollection
     {
         private ObservableCollection<OrderInfo> _orders;
+
         public ObservableCollection<OrderInfo> Orders
         {
             get { return _orders; }
             set { _orders = value; }
         }
+
         public OrderInfoCollection()
         {
             _orders = new ObservableCollection<OrderInfo>();
             this.GenerateOrders();
         }
+
         private void GenerateOrders()
         {
             _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
@@ -34,5 +37,6 @@ namespace SfDataGrid_Demo
             _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
             _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
         }
+
     }
 }
